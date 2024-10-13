@@ -1,0 +1,249 @@
+@import url(../Excon_Font/css/excon.css);
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes spinning-flower {
+  0%{
+    transform: rotate(0);
+  }
+  50%{
+    transform: rotate(90deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
+:root{
+  --color-bg: #e7e4df;
+  --color-font: #141414;
+  --font--size-h1: 17vw;
+  --font-size-h2: 2rem;
+  --font-size-p: 1rem;
+  --font-size-links: .9375rem;
+  --padding-all: 1rem;
+  --margin-all: 1rem;
+  --font-thin: 'Excon-Thin';
+  --font-light: 'Excon-Light';
+  --font-regular: 'Excon-Regular';
+  --font-medium: 'Excon-Medium';
+  --font-bold: 'Excon-Bold';
+  --font-black: 'Excon-Black';
+  --border-bottom: var(--color-font) solid 3rem;
+}
+
+body{
+  background-color: var(--color-bg);
+  margin: 0.8rem;
+}
+
+/* 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+HERO SECTION 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.hero{
+  position: relative;
+  height: 45vh;
+  border-bottom: var(--border-bottom);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.hero-title{
+  font-size: var(--font--size-h1);
+  font-family: var(--font-black);
+}
+
+.hero-icon{
+  position: absolute;
+  bottom: 60%;
+  left: 47%;
+  width: 100%;
+  max-width: 110px;
+  animation: spinning-flower 3s infinite alternate;
+}
+
+/* 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+NAVIGATION
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  padding: var(--padding-all);
+  border-bottom: var(--color-font) solid .125rem;
+}
+
+.nav-logo{
+  font-size: 2rem;
+  color: var(--color-font);
+}
+
+
+.nav-links{
+  color: var(--color-font);
+  text-decoration: none;
+  font-family: var(--font-regular);
+  font-size: var(--font-size-links);
+}
+
+/* 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+MAIN SECTION
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 45vh;
+  border-bottom: var(--color-font) solid .125rem;
+}
+
+/* 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ASIDE SECTION FROM MAIN
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.aside{
+  display: flex;
+  align-items: end;
+  height: 45vh;
+  width: 30vw;
+  border-right: var(--color-font) solid .125rem;
+  padding: var(--padding-all);
+}
+
+.aside-wrapper{
+  display: flex;
+  gap: 2rem;
+}
+
+.aside-title{
+  color: var(--color-font);
+  font-family: var(--font-medium);
+  font-weight: 100;
+}
+
+.list-wrapper{
+  list-style: none;
+}
+
+.aside-items{
+  color: var(--color-font);
+  font-family: var(--font-medium);
+}
+
+/* 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ARTICLE SECTION FROM MAIN
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.main-article{
+  display: flex;
+  align-items: end;
+  padding: var(--padding-all);
+}
+
+.article-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.main-quote{
+  font-family: var(--font-medium);
+  max-width: 15ch;
+  font-size: 5vw;
+}
+
+.quote-icon{
+  font-size: 3vw;
+}
+
+/* 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+THIRD SECTION
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.third-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 50vh;
+  border-bottom: var(--color-font) solid .125rem;
+}
+
+/* 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ASIDE SECTION FROM THIRD SECTION
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.article-second{
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  width: 70vw;
+  border-right: var(--color-font) solid .125rem;
+  padding: var(--padding-all);
+}
+
+.article-second-wrapper{
+  display: flex;
+  gap: 2rem;
+}
+
+/* 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ARTICLE SECTION FROM THIRD SECTION
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.second-aside{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27vw;
+  padding: var(--padding-all);
+}
+
+.article-second-wrapper{
+  display: flex;
+  gap: 2rem;
+}
+
+.from-article{
+  font-family: var(--font-medium);
+  font-size: 2.5vw;
+}
+
+.fan-icon{
+  font-size: 10rem;
+  transition: all 400ms linear;
+}
+
+/* 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+FOURTH SECTION
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.fourth-section{
+  height: 100vh;
+}
+
+
+
+
+
+
+
+
+
