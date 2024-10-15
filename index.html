@@ -7,8 +7,9 @@
     <meta name="description" content="less is better, minimal is better">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style/base.css">
-    <script src="./frontend/base.js" async defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./frontend/base.js" defer></script>
+    <script src="./frontend/gsap.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://kit.fontawesome.com/879ba98a23.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -29,16 +30,17 @@
           <section class="aside-wrapper">
             <h2 class="aside-title">Simplicity:</h2>
             <ul class="list-wrapper">
-              <li class="aside-items">01 Clarity</li>
-              <li class="aside-items">02 Elegance</li>
-              <li class="aside-items">03 Brevity</li>
-              <li class="aside-items">04 Essence</li>
+              <li class="aside-items item-1"><span class="s1">01 Clarity</span></li>
+              <li class="aside-items item-2"><span class="s2">02 Elegance</span></li>
+              <li class="aside-items item-3"><span class="s3">03 Brevity</span></li>
+              <li class="aside-items item-4"><span class="s4">04 Essence</span></li>
             </ul>
           </section>
         </aside>
         <article class="main-article">
           <section class="article-wrapper">
-            <p class="main-quote">Less is more, simplicity says it all.</p>
+            <p class="main-quote quote-1">Less is more,</p>
+            <p class="main-quote quote-2">simplicity says it all.</p>
           </section>
         </article>
       </main>
@@ -59,7 +61,8 @@
         </aside>
       </section>
       <section class="fourth-section">
-
+          <img class="fourth-img" src="./assets/White wooden staircase aesthetic.jpg" alt="white aesthetic wooden staircase">
+          <p class="fourth-img__caption">True freedom comes when we’re not controlled by wanting more stuff.</>
       </section>
   </body>
 </html>
